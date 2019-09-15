@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'bookrev.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dc0mf0clpkih93',
+        'USER': 'kkjhmolfahifbg',
+        'PASSWORD': '11b285303111c0f144c2cb5948453a33ee3c30a10cf4ed1af2484c9be8f5dc79',
+        'HOST': 'ec2-174-129-27-158.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 

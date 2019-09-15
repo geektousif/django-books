@@ -4,20 +4,24 @@ Login
 {% endblock title %}
 
 {% block content %}
-    <div class="container">
+   
         <header>
+        <div class="container">
             <h2>Login Form</h2>
             <hr><br>
+        </div>
         </header>
         <main>
+            <div class="container">
             <form method="POST">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <button type="submit" class="btn waves-effect purple darken-4">Login</button>
             </form>
+        </div>
         </main>
-    </div>
-    <footer class="page-footer">
+    
+    <footer class="page-footer teal">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
